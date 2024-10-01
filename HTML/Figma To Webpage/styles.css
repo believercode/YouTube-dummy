@@ -10,6 +10,8 @@ body {
     margin: 0;
     padding: 0;
 }
+
+
 .overtitle {
     font-family: Poppins;
     font-size: 12px;
@@ -169,6 +171,17 @@ h2 {
 
 
 /* ===========PROJECTS SECTION========== */
+#project-sect-id {
+    position: relative;
+}
+.absolute-img3 {
+    position: absolute;
+    left: -190px;
+    top: -638;
+}
+
+
+
 .projects {
     display: flex;
     height: 160px;
