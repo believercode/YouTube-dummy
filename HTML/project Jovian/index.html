@@ -1,31 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
     <title>
         My First Web Page
     </title>
     <link rel="stylesheet" href="styles.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap" rel="stylesheet">
 
 </head>
 
-<body>
-    <div id="navbar">
 
-        <img id="logo" alt="Jovian Logo" src="https://i.imgur.com/m1wXjqw.png" height="30" />
+<body>
+    <!-- NAVBAR SECTION -->
+    <div id="navbar">
+        <img id="logo" alt="logo" src="jovian photo.png" height="30px">
+        <img id="logo-with-name" alt="Jovian Logo" src="jovian photo text.png" height="30" />
     </div>
     <img id="banner" src="banner.jpg" alt="Banner" height="240">
 
-        <!-- HEAD SECTION -->
 
+        <!-- HEAD SECTION -->
     <h1>
         About Jovian
     </h1>
@@ -63,55 +67,81 @@
 
 
         <!-- JOBS SECTION -->
-
-
     <h2>Job Opportunities</h2>
     <div class="jobs">
-        <table>
-            <tr class="table-header">
-                <th rowspan="2">Job Title</th>
-                <th colspan="2">Location</th>
-                <th rowspan="2">Salary</th>
-                <th rowspan="2">Posted on</th>
-            </tr>
-            <tr class="table-header">
-                <th>City</th>
-                <th>Country</th>
-            </tr>
-            <tr class="table-data">
-                <td>Frontend Developer</td>
-                <td>Bengaluru</td>
-                <td>India</td>
-                <td>£12,00,000</td>
-                <td>Mar 3, 2024</td>
-            </tr>
-            <tr class="table-data">
-                <td>Full Stack Developer</td>
-                <td>New Delhi</td>
-                <td>India</td>
-                <td>£15,00,000</td>
-                <td>Fab 1, 2024</td>
-            </tr>
-            <tr class="table-data">
-                <td>Data Scientist</td>
-                <td>San Francisco</td>
-                <td>USA</td>
-                <td>$175,000</td>
-                <td>Dec 22, 2023</td>
-            </tr>
-            <tr class="table-data">
-                <td>Machine Learning Engineer</td>
-                <td colspan="2">Remote</td>
-                <td>$80,000</td>
-                <td>Sep 19, 2023</td>
-            </tr>
-        </table>
+        <div id="jobs-list">
+            <ul class="job">
+                <li class="job-title">Frontend Developer</li>
+                <li class="job-detail">Bengaluru, India</li>
+                <li class="job-detail">£12,00,000</li>
+                <li class="job-detail">Mar 3, 2024</li>
+            </ul>
+            <ul class="job">
+                <li class="job-title">Full Stack Developer</li>
+                <li class="job-detail">New Delhi, India</li>
+                <li class="job-detail">£15,00,000</li>
+                <li class="job-detail">Fab 1, 2024</li>
+            </ul>
+            <ul class="job">
+                <li class="job-title">Data Scientist</li>
+                <li class="job-detail">San Francisco, USA</li>
+                <li class="job-detail">$175,000</li>
+                <li class="job-detail">Dec 22, 2023</li>
+            </ul>
+            <ul class="job">
+                <li class="job-title">Machine Learning Engineer</li>
+                <li class="job-detail">Remote</li>
+                <li class="job-detail">$80,000</li>
+                <li class="job-detail">Sep 19, 2023</li>
+            </ul>
+        </div>
+
+
+        <div>
+            <table id="jobs-table">
+                <tr class="table-header">
+                    <th rowspan="2">Job Title</th>
+                    <th colspan="2">Location</th>
+                    <th rowspan="2">Salary</th>
+                    <th rowspan="2">Posted on</th>
+                </tr>
+                <tr class="table-header">
+                    <th>City</th>
+                    <th>Country</th>
+                </tr>
+                <tr class="table-data">
+                    <td>Frontend Developer</td>
+                    <td>Bengaluru</td>
+                    <td>India</td>
+                    <td>£12,00,000</td>
+                    <td>Mar 3, 2024</td>
+                </tr>
+                <tr class="table-data">
+                    <td>Full Stack Developer</td>
+                    <td>New Delhi</td>
+                    <td>India</td>
+                    <td>£15,00,000</td>
+                    <td>Fab 1, 2024</td>
+                </tr>
+                <tr class="table-data">
+                    <td>Data Scientist</td>
+                    <td>San Francisco</td>
+                    <td>USA</td>
+                    <td>$175,000</td>
+                    <td>Dec 22, 2023</td>
+                </tr>
+                <tr class="table-data">
+                    <td>Machine Learning Engineer</td>
+                    <td colspan="2">Remote</td>
+                    <td>$80,000</td>
+                    <td>Sep 19, 2023</td>
+                </tr>
+            </table>
+        </div>
     </div>
 
 
         <!-- APPLICATION FORM SECTION -->
-
-
     <div class="application">
         <h2>SUBMIT YOUR APPLICATION</h2>
         <form
@@ -166,13 +196,11 @@
 
 
         <!-- FOOTER SECTION -->
-
-
     <div id="footer">
         <ul id="footer-links">
             <li>
                 <a href="https://jovian.com/learn" target="_blank">
-                    Courses
+                Courses
                 </a>
             </li>
             <li>
@@ -190,5 +218,4 @@
     </div>
 
 </body>
-
 </html>

@@ -1,163 +1,220 @@
+/* Base styles (extra small devices - mobile) */
+html {
+  font-size: 14px;
+}
 body {
-
-  font-family: "Varela Round", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-
+  font-family: "Roboto", sans-serif;
+  color: #444444;
   margin: 0;
   padding: 0;
 }
-
-
 h1, h2, h3, h4, h5, h6 {
   font-family: "Julius Sans One", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
-
-
+h1 {
+    text-align: center;
+}
+h2 {
+  text-align: center;
+}
 a {
   text-decoration: none;
   color: #3B82F6;
 }
-
+a:hover, a:focus {
+  color: #1D4ED8;
+}
 #navbar {
   padding: 8px;
   margin: 0;
 }
-
+#logo-with-name {
+  display: none;
+}
 #banner {
+  width: 100%;
   object-fit: cover;
+  height: 120px;
 }
-
-
-h1 {
-    text-align: center;
-}
-
-#banner {
-  width: 100%; 
-}
-
-
-/* ========= ABOUT =========== */
 
 #about {
   display: flex;
-  max-width: 800px;
+  flex-direction: column;
+  max-width: 500px;
   margin: 0 auto;
   padding: 8px;
 }
-
-#description {
-  width: 50%;
-  padding-right: 8px;
-  font-size: 1.2rem;
-}
-
-#team {
-  width: 50%;
-}
-
 #team-image {
   border-radius: 5px;
-  width: 100%
+  width: 100%;
 }
-
-h2 {
-  text-align: center;
-}
-
-
-/* ========= TABLE =========== */
 
 .jobs {
-  max-width: 800px;
+  max-width: 500px;
   margin: 0 auto;
   padding: 0 8px;
 }
-table {
-  width: 100%;
-  border-collapse: collapse;
-  border: 1px solid rgb(230, 230, 230);
-  text-align: center;
+
+.job {
+  border: 1px solid #dddddd;
+  border-radius: 5px;
+  margin: 0 0 8px 0;
+  padding: 8px;
+
+  list-style-type: none;
 }
-.table-header th {
-  background-color: #E0E7FF;
+.job-title {
+  font-size: 1.25rem;
+  color: #222222;
+  font-weight: 500;
 }
-.table-data:nth-child(odd) {
-  background-color: ghostwhite;
-}
-.table-data td, .table-header th {
-  border: 1px solid rgb(164, 164, 164);
-  padding: 10px;
+.job-detail {
+  color: #222222;
+  margin-top: 2px;
 }
 
 
-/* ========= APPLICATION FORM =========== */
+#jobs-table {
+  display: none;
+}
 
-.application {
-  max-width: 800px;
+/* APPLICATION FORM */
+.application-form {
+  max-width: 500px;
   margin: 0 auto;
-}
-.application-form, label {
-  font-weight: 600;
+  padding: 0 8px;
 }
 .form-group {
-  padding-top: 10px;
+  margin: 16px 0;
 }
-.form-group input, select, textarea {
-  margin-top: 4px;
-  font-size: 20px;
-  border: 1px solid rgb(80, 80, 80);
-  padding: 5px;
+.application-form label {
+  font-weight: 600;
+}
+.application-form input, select, textarea {
+  outline: none;
+
+  padding: 8px;
+  width: 90%;
+  font-size: 1.25rem;
   border-radius: 5px;
+  border: 1px solid gray;
 }
 .form-group textarea {
-  width: 48%;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 .form-group input[type="checkbox"] {
-  height: 16px;
   width: 16px;
-  margin-right: 8px;
+  height: 16px;
 }
 .form-group input[type="submit"] {
-  background-color: #2563EB;
+  background-color: #3B82F6;
   color: white;
-  border: none;
-  padding: 16px;
-}
-.form-group input[type="submit"]:hover {
-  background-color: #2564eba2;
-  color: white;
-  border: none;
-  padding: 16px;
+  font-weight: 500;
+  cursor: pointer;
 }
 
-
-
-
-/* ========= FOOTER =========== */
-
+/* FOOTER SECTION */
 #footer {
-  background-color: #F1F5F9;
+  background-color: #E2E8F0;
   padding: 8px;
   margin-top: 32px;
   text-align: center;
 }
-
 #footer-links {
-  list-style: none;  
+  list-style-type: none;
+  padding: 0;
 }
-
 #footer-links li {
-  display: inline;
-  margin: 0 16px;
+  margin: 8px 0;
 }
-
 .copyright {
-  color: gray;
+  color: #71717A;
   font-size: 0.875rem;
 }
 
+
+
+
+/* Small devices (TABLETS) */
+@media screen and (min-width: 576px) {
+  html {
+    font-size: 16px;
+  }
+  #logo {
+    display: none;
+  }
+  #logo-with-name {
+    display: block;
+  }
+  #banner {
+    height: 200px;
+  }
+
+  #footer-links li {
+    display: inline;
+    margin: 0 16px;
+  }
+}
+
+
+
+/* Medium devices (LAPTOPS) */
+@media screen and (min-width: 768px) {
+  #banner {
+    height: 280px;
+  }
+
+  #about {
+    flex-direction: row;
+    max-width: 800px;
+  }
+  #description {
+    width: 50%;
+    padding-right: 8px;
+    font-size: 1.25rem;
+  }
+  #team {
+    width: 50%;
+  }
+
+/* JOBS SECTION */
+  .jobs {
+    max-width: 800px;
+  }
+  #jobs-list {
+    display: none;
+  }
+
+  #jobs-table {
+    display: table;
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid rgb(230, 230, 230);
+  }
+  .table-header th {
+    border: 1px solid gray;
+    padding: 8px;
+    background-color: #BFDBFE;
+    text-align: center;
+  }
+  .table-data td {
+    border: 1px solid gray;
+    padding: 8px;
+  }
+  .table-data:nth-child(odd) {
+    background-color: ghostwhite;
+  }
+
+/* APPLICATION FORM */
+  .application-form {
+    max-width: 800px;
+  }
+  .form-group input, select {
+    width: auto;
+  }
+  .form-group textarea {
+    width: 80%;
+  }
+}

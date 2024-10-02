@@ -1,5 +1,7 @@
 html {
     height: 3596px;
+    width: 1440px;
+    margin: 0 auto;
 }
 body {
     background-color: #FFF8F0;
@@ -278,6 +280,8 @@ h2 {
 }
 .absolute-img4 {
     position: absolute;
+    left: 600px;
+    top: -250px;
 }
 
 
@@ -398,6 +402,10 @@ h2 {
 
 
 /* ===========QUESTIONS SECTION========== */
+.question-section {
+    max-width: 700px;
+}
+
 .questions {
     margin-top: 6px;
 }
@@ -431,9 +439,8 @@ h2 {
     color: #FFFFFF;
     text-align: center;
 
-    margin-top: 96px;
     padding: 20px 0;
-
+    margin-top: 96px;
 
     font-family: Poppins;
     font-size: 12px;
