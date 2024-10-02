@@ -173,11 +173,12 @@ h2 {
 /* ===========PROJECTS SECTION========== */
 #project-sect-id {
     position: relative;
+    z-index: 150;
 }
 .absolute-img3 {
     position: absolute;
     left: -190px;
-    top: -638;
+    top: 130px;
 }
 
 
@@ -272,12 +273,23 @@ h2 {
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 20px;
     margin-top: 48px;
+    
+    position: relative;
 }
+.absolute-img4 {
+    position: absolute;
+}
+
+
+
+
+
 .pricing-box {
     border-radius: 10px;
     background-color: #FFFFFF;
     box-shadow: 6px 2px 25px -9px #0000001A;
     padding: 20px;
+    z-index: 1000;
 
     transition-property: transform;
     transition-duration: 0.1s;
