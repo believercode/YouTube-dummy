@@ -1,0 +1,58 @@
+
+body {
+    font-family: "Nunito", sans-serif;
+    height: 100vh;
+    background: linear-gradient(to bottom right, #79A0DC, #DFABBD);
+    
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Ubuntu", sans-serif;
+}
+
+h1 span {
+    color: rgba(236,84,83,85%);
+}
+
+#hire-btn, #home-btn {
+    background-color: #EC5453;
+    box-shadow:  6px 6px 4px rgba(0, 0, 0, 40%);
+}
+
+.social-icon {
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    margin: 10px;
+    color: white;
+    font-size: 30px;
+}
+
+#social-container {
+    
+    position: absolute;
+    top: 50%;     /* Align to the middle */
+    right: -50px;  /* Offset from the right */
+    transform: translateY(-50%); /* Center vertically */
+
+}
+
+.linkedin {
+    background-color: #006699;
+}
+
+.behance {
+    background-color: #111111;
+}
+
+.instagram {
+    background: linear-gradient(-45deg, #FBE18A, #FCBB45, #F75274, #D53692, #8F39CE, #5B4FE9);
+}
+
+.facebook {
+    /* background-color: #3b5998; */
+    background-color: #337FFF;
+}

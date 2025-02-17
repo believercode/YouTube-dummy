@@ -1,3 +1,5 @@
+/* 
+
 * {
     margin: 0;
     padding: 0;
@@ -31,7 +33,7 @@ nav {
     width: 35px;
 }
 
-/* TEXT BOX */
+    TEXT BOX 
 .text-box {
     display: flex;
     flex-direction: column;
@@ -64,7 +66,7 @@ button {
     max-width: fit-content;
 }
 
-/* CARD SECTION */
+    CARD SECTION 
 .card-section {
     margin-top: 78px;
 }
@@ -115,7 +117,7 @@ button {
 }
 
 
-/* THIS IS FOR TABLET */
+    THIS IS FOR TABLET 
 @media screen and (min-width: 576px) {
     .title {
         font-size: 70px;
@@ -151,7 +153,7 @@ button {
 }
 
 
-/* THIS IS FOR LAPOTOP AND DESKTOP */
+    THIS IS FOR LAPOTOP AND DESKTOP 
 @media screen and (min-width: 992px) {
     .hero-section {
         background-image: url(p2-Background.png);
@@ -193,4 +195,4 @@ button {
     .card {
         width: 419px;
     }
-}
+}    */
