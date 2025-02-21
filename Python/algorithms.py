@@ -1,7 +1,7 @@
 class Algorithms:
     def __init__(self):
         pass
-    
+
     # Binary Search algorithm TIME COMPLEXITY: O(log n)
     def b_search(self, array, target):
         l = len(array)
